@@ -1,2 +1,2 @@
 
-    demo_addr();
+         printf("%c %d\n",c,c );
