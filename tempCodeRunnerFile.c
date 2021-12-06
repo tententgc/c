@@ -1,2 +1,2 @@
 
-    *flower =  "Tulip"; 
+    printf("%s\n", s);
