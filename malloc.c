@@ -16,8 +16,8 @@ char *strtag2 (char *dest,char *s,char *tag){
 char *strtag3 (char *s,char *tag){ 
     char tmp[500]; 
     sprintf(tmp ,"<%s>%s</%s>",tag,s,tag);
-    char *dest = (char * ) malloc(strlen(tmp)+1); // จอง memory เพื่อเก็บค่า tmp เป็นตัวแปร dest
-    strcpy(dest,tmp); // เอา tmp ไปใส่ dest 
+    char *dest = (char * ) malloc(strlen(tmp)+1); // +1 for the null-terminator  
+    strcpy(dest,tmp); // put tmp to dest 
     return dest; 
 }
 
@@ -31,7 +31,7 @@ int main(){
 
     char *str3 = strtag3("title","h1"); 
     printf("heap = %s\n",str3);
-    free(str3); // ลบตัวแปร str3 ทิ้ง  เพราะเป็นตัวแปรที่ถูกจัดสรรโดย malloc ต้องลบทุกครั้งไม่งั้นจะโดนจองเม็ม 
+    free(str3); // delete str3 because it is in heap 
     return 0; 
 
 }
