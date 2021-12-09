@@ -18,6 +18,9 @@ void showdetails(struct Books manybooks[10],int n ){
         printf("ISBN is %s\n", manybooks[i].isbn);
         printf("Price is %d\n", manybooks[i].price);
     }
+
+
+    
 } 
 int main(){
     struct Books manybooks[10]; 
