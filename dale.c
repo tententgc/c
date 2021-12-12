@@ -15,6 +15,9 @@ void showdetails(struct Books manybooks[10],int n ){
     for(int i = 0; i < n; i++){
         printf("Bookname is %s\n", manybooks[i].bookname);
         printf("Author is %s\n", manybooks[i].author);
+
+
+        
         printf("ISBN is %s\n", manybooks[i].isbn);
         printf("Price is %d\n", manybooks[i].price);
     }
